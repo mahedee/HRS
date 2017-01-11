@@ -7,10 +7,10 @@ using System.Web;
 
 namespace HRS.Models
 {
-    public class facilities
+    public class Facilities
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public string Id { get; set; }
+        public int Id { get; set; }
 
         [Required]
         [MaxLength(200)]

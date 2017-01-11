@@ -160,6 +160,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\FacilitiesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\RoomTypeController.cs" />
@@ -169,6 +170,14 @@
     <Compile Include="Migrations\201701111317119_mig-001.cs" />
     <Compile Include="Migrations\201701111317119_mig-001.Designer.cs">
       <DependentUpon>201701111317119_mig-001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701111406510_mig001-raaz.cs" />
+    <Compile Include="Migrations\201701111406510_mig001-raaz.Designer.cs">
+      <DependentUpon>201701111406510_mig001-raaz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701111416033_mig002-raaz.cs" />
+    <Compile Include="Migrations\201701111416033_mig002-raaz.Designer.cs">
+      <DependentUpon>201701111416033_mig002-raaz.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -244,6 +253,11 @@
     <Content Include="Views\RoomType\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutCP.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Facilities\Create.cshtml" />
+    <Content Include="Views\Facilities\Delete.cshtml" />
+    <Content Include="Views\Facilities\Details.cshtml" />
+    <Content Include="Views\Facilities\Edit.cshtml" />
+    <Content Include="Views\Facilities\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -258,6 +272,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201701111317119_mig-001.resx">
       <DependentUpon>201701111317119_mig-001.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701111406510_mig001-raaz.resx">
+      <DependentUpon>201701111406510_mig001-raaz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701111416033_mig002-raaz.resx">
+      <DependentUpon>201701111416033_mig002-raaz.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

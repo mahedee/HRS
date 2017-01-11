@@ -21,5 +21,7 @@ namespace HRS.Repository
         }
 
         public DbSet<RoomType> RoomType { get; set; }
+        public DbSet<Facilities> Facilities { get; set; }
+        
     }
 }
