@@ -6,6 +6,7 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
 using HRS.Models;
+using HRS.Repository;
 
 namespace HRS
 {
