@@ -160,6 +160,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\FacilitiesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HotelController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -171,12 +172,23 @@
     <Compile Include="Migrations\201701111317119_mig-001.Designer.cs">
       <DependentUpon>201701111317119_mig-001.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Migrations\201701111431233_mig-001-sumon.cs" />
     <Compile Include="Migrations\201701111431233_mig-001-sumon.Designer.cs">
       <DependentUpon>201701111431233_mig-001-sumon.cs</DependentUpon>
+=======
+    <Compile Include="Migrations\201701111406510_mig001-raaz.cs" />
+    <Compile Include="Migrations\201701111406510_mig001-raaz.Designer.cs">
+      <DependentUpon>201701111406510_mig001-raaz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701111416033_mig002-raaz.cs" />
+    <Compile Include="Migrations\201701111416033_mig002-raaz.Designer.cs">
+      <DependentUpon>201701111416033_mig002-raaz.cs</DependentUpon>
+>>>>>>> origin/master
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\facilities.cs" />
     <Compile Include="Models\Hotel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -248,11 +260,19 @@
     <Content Include="Views\RoomType\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutCP.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\Hotel\Create.cshtml" />
     <Content Include="Views\Hotel\Delete.cshtml" />
     <Content Include="Views\Hotel\Details.cshtml" />
     <Content Include="Views\Hotel\Edit.cshtml" />
     <Content Include="Views\Hotel\Index.cshtml" />
+=======
+    <Content Include="Views\Facilities\Create.cshtml" />
+    <Content Include="Views\Facilities\Delete.cshtml" />
+    <Content Include="Views\Facilities\Details.cshtml" />
+    <Content Include="Views\Facilities\Edit.cshtml" />
+    <Content Include="Views\Facilities\Index.cshtml" />
+>>>>>>> origin/master
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -268,8 +288,16 @@
     <EmbeddedResource Include="Migrations\201701111317119_mig-001.resx">
       <DependentUpon>201701111317119_mig-001.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="Migrations\201701111431233_mig-001-sumon.resx">
       <DependentUpon>201701111431233_mig-001-sumon.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="Migrations\201701111406510_mig001-raaz.resx">
+      <DependentUpon>201701111406510_mig001-raaz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701111416033_mig002-raaz.resx">
+      <DependentUpon>201701111416033_mig002-raaz.cs</DependentUpon>
+>>>>>>> origin/master
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

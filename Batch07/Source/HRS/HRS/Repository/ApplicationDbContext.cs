@@ -21,6 +21,11 @@ namespace HRS.Repository
         }
 
         public DbSet<RoomType> RoomType { get; set; }
+<<<<<<< HEAD
         public DbSet<Hotel> Hotel { get; set; }
+=======
+        public DbSet<Facilities> Facilities { get; set; }
+        
+>>>>>>> origin/master
     }
 }
