@@ -161,6 +161,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HotelController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\RoomTypeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -169,6 +170,10 @@
     <Compile Include="Migrations\201701111317119_mig-001.cs" />
     <Compile Include="Migrations\201701111317119_mig-001.Designer.cs">
       <DependentUpon>201701111317119_mig-001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701111431233_mig-001-sumon.cs" />
+    <Compile Include="Migrations\201701111431233_mig-001-sumon.Designer.cs">
+      <DependentUpon>201701111431233_mig-001-sumon.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -243,6 +248,11 @@
     <Content Include="Views\RoomType\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutCP.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Hotel\Create.cshtml" />
+    <Content Include="Views\Hotel\Delete.cshtml" />
+    <Content Include="Views\Hotel\Details.cshtml" />
+    <Content Include="Views\Hotel\Edit.cshtml" />
+    <Content Include="Views\Hotel\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -257,6 +267,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201701111317119_mig-001.resx">
       <DependentUpon>201701111317119_mig-001.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701111431233_mig-001-sumon.resx">
+      <DependentUpon>201701111431233_mig-001-sumon.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
