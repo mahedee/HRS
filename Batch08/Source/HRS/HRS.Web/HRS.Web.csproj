@@ -196,21 +196,47 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CitiesController.cs" />
     <Compile Include="Controllers\CountriesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PropertiesController.cs" />
+    <Compile Include="Controllers\PropertyTypesController.cs" />
+    <Compile Include="Controllers\RatingsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201706181230579_firstMigration.cs" />
-    <Compile Include="Migrations\201706181230579_firstMigration.Designer.cs">
-      <DependentUpon>201706181230579_firstMigration.cs</DependentUpon>
+    <Compile Include="Migrations\201708140439020_addcountry.cs" />
+    <Compile Include="Migrations\201708140439020_addcountry.Designer.cs">
+      <DependentUpon>201708140439020_addcountry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708140440313_addcity.cs" />
+    <Compile Include="Migrations\201708140440313_addcity.Designer.cs">
+      <DependentUpon>201708140440313_addcity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708140453405_addpropertytype.cs" />
+    <Compile Include="Migrations\201708140453405_addpropertytype.Designer.cs">
+      <DependentUpon>201708140453405_addpropertytype.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708140455450_addratings.cs" />
+    <Compile Include="Migrations\201708140455450_addratings.Designer.cs">
+      <DependentUpon>201708140455450_addratings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708140537102_addprop.cs" />
+    <Compile Include="Migrations\201708140537102_addprop.Designer.cs">
+      <DependentUpon>201708140537102_addprop.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\City.cs" />
     <Compile Include="Models\Country.cs" />
+    <Compile Include="Models\LocationInfo.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Lookup.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Property.cs" />
+    <Compile Include="Models\PropertyType.cs" />
+    <Compile Include="Models\Rating.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -221,10 +247,10 @@
     </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -283,11 +309,26 @@
     <Content Include="Views\Countries\Details.cshtml" />
     <Content Include="Views\Countries\Edit.cshtml" />
     <Content Include="Views\Countries\Index.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201706181230579_firstMigration.resx">
-      <DependentUpon>201706181230579_firstMigration.cs</DependentUpon>
-    </EmbeddedResource>
+    <Content Include="Views\Cities\Create.cshtml" />
+    <Content Include="Views\Cities\Delete.cshtml" />
+    <Content Include="Views\Cities\Details.cshtml" />
+    <Content Include="Views\Cities\Edit.cshtml" />
+    <Content Include="Views\Cities\Index.cshtml" />
+    <Content Include="Views\PropertyTypes\Create.cshtml" />
+    <Content Include="Views\PropertyTypes\Delete.cshtml" />
+    <Content Include="Views\PropertyTypes\Details.cshtml" />
+    <Content Include="Views\PropertyTypes\Edit.cshtml" />
+    <Content Include="Views\PropertyTypes\Index.cshtml" />
+    <Content Include="Views\Ratings\Create.cshtml" />
+    <Content Include="Views\Ratings\Delete.cshtml" />
+    <Content Include="Views\Ratings\Details.cshtml" />
+    <Content Include="Views\Ratings\Edit.cshtml" />
+    <Content Include="Views\Ratings\Index.cshtml" />
+    <Content Include="Views\Properties\Create.cshtml" />
+    <Content Include="Views\Properties\Delete.cshtml" />
+    <Content Include="Views\Properties\Details.cshtml" />
+    <Content Include="Views\Properties\Edit.cshtml" />
+    <Content Include="Views\Properties\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -296,6 +337,23 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201708140439020_addcountry.resx">
+      <DependentUpon>201708140439020_addcountry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708140440313_addcity.resx">
+      <DependentUpon>201708140440313_addcity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708140453405_addpropertytype.resx">
+      <DependentUpon>201708140453405_addpropertytype.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708140455450_addratings.resx">
+      <DependentUpon>201708140455450_addratings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708140537102_addprop.resx">
+      <DependentUpon>201708140537102_addprop.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

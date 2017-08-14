@@ -3,6 +3,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using System.Data.Entity.ModelConfiguration.Conventions;
 
 namespace HRS.Web.Models
 {
@@ -29,6 +30,33 @@ namespace HRS.Web.Models
         {
             return new ApplicationDbContext();
         }
-        public DbSet<Country>Country { get; set; }
+        public DbSet<Country> Country { get; set; }
+        public DbSet<City> City { get; set; }
+        public DbSet<PropertyType> PropertyType { get; set; }
+
+        public DbSet<Rating> Rating { get; set; }
+        public DbSet<Property> Property { get; set; }
+
+
+        /*
+              public DbSet<LocationInfo> DiscoverInfo { get; set; }
+              public DbSet<PropertyInfo> PropertyInfo { get; set; }
+              public DbSet<RoomInfo> RoomInfo { get; set; }
+
+          */
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            //modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+            //modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
+
+            modelBuilder.Entity<Property>()
+            .HasRequired(s => s.City)
+            .WithMany()
+            .WillCascadeOnDelete(false);
+
+
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }
