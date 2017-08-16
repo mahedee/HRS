@@ -1,0 +1,96 @@
+﻿@model HRS.Web.Models.Property
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Property</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.City.CityName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.City.CityName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Country.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Country.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PropertyType.PropType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PropertyType.PropType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Rating.StarRating)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rating.StarRating)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PropertyName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PropertyName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PropertyAdd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PropertyAdd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PropertyDesc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PropertyDesc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Facilities)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Facilities)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Image)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Image)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
