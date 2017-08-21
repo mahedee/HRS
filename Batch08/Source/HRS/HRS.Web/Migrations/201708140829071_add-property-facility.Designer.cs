@@ -7,13 +7,13 @@ namespace HRS.Web.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class addprop : IMigrationMetadata
+    public sealed partial class addpropertyfacility : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(addprop));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(addpropertyfacility));
         
         string IMigrationMetadata.Id
         {
-            get { return "201708140537102_addprop"; }
+            get { return "201708140829071_add-property-facility"; }
         }
         
         string IMigrationMetadata.Source

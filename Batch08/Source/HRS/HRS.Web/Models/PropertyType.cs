@@ -11,6 +11,8 @@ namespace HRS.Web.Models
     public class PropertyType
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+
+        [Display(Name = "Property Type")]
         public int Id { get; set; }
         [Required]
         [Display(Name = "Property Type")]

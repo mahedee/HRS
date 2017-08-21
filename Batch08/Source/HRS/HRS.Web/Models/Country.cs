@@ -15,5 +15,7 @@ namespace HRS.Web.Models
         [Display(Name = "Country Name")]
         public string Name { get; set; }
         public string Description { get; set; }
+
+        public virtual List<City> Cities { get; set; }
     }
 }

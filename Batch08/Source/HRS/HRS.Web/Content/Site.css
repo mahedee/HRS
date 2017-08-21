@@ -1,8 +1,9 @@
-﻿body {
+﻿body 
+{
     padding-top: 50px;
 }
 
-    body > .navbar {
+  body > .navbar {
         -webkit-transition: background-color .3s ease-in;
         transition: background-color .3s ease-in;
     }
@@ -95,6 +96,7 @@
 
 footer {
     margin: 5em 0;
+
 }
 
     footer li {

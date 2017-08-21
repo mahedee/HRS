@@ -36,7 +36,7 @@ namespace HRS.Web.Models
 
         public DbSet<Rating> Rating { get; set; }
         public DbSet<Property> Property { get; set; }
-
+        public DbSet<PropertyFacility> PropertyFacility { get; set; }
 
         /*
               public DbSet<LocationInfo> DiscoverInfo { get; set; }

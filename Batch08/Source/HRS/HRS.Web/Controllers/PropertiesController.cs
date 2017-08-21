@@ -43,6 +43,7 @@ namespace HRS.Web.Controllers
             ViewBag.CountryId = new SelectList(db.Country, "Id", "Name");
             ViewBag.PropertyTypeId = new SelectList(db.PropertyType, "Id", "PropType");
             ViewBag.RatingId = new SelectList(db.Rating, "Id", "StarRating");
+            ViewBag.Facilities = new SelectList(db.PropertyFacility, "Id", "FacilitiesName");
             return View();
         }
 

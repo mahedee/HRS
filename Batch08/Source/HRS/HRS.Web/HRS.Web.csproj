@@ -201,30 +201,23 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PropertiesController.cs" />
+    <Compile Include="Controllers\PropertyFacilitiesController.cs" />
     <Compile Include="Controllers\PropertyTypesController.cs" />
     <Compile Include="Controllers\RatingsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201708140439020_addcountry.cs" />
-    <Compile Include="Migrations\201708140439020_addcountry.Designer.cs">
-      <DependentUpon>201708140439020_addcountry.cs</DependentUpon>
+    <Compile Include="Migrations\201708140635197_initmig.cs" />
+    <Compile Include="Migrations\201708140635197_initmig.Designer.cs">
+      <DependentUpon>201708140635197_initmig.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201708140440313_addcity.cs" />
-    <Compile Include="Migrations\201708140440313_addcity.Designer.cs">
-      <DependentUpon>201708140440313_addcity.cs</DependentUpon>
+    <Compile Include="Migrations\201708140829071_add-property-facility.cs" />
+    <Compile Include="Migrations\201708140829071_add-property-facility.Designer.cs">
+      <DependentUpon>201708140829071_add-property-facility.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201708140453405_addpropertytype.cs" />
-    <Compile Include="Migrations\201708140453405_addpropertytype.Designer.cs">
-      <DependentUpon>201708140453405_addpropertytype.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201708140455450_addratings.cs" />
-    <Compile Include="Migrations\201708140455450_addratings.Designer.cs">
-      <DependentUpon>201708140455450_addratings.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201708140537102_addprop.cs" />
-    <Compile Include="Migrations\201708140537102_addprop.Designer.cs">
-      <DependentUpon>201708140537102_addprop.cs</DependentUpon>
+    <Compile Include="Migrations\201708141042517_test01.cs" />
+    <Compile Include="Migrations\201708141042517_test01.Designer.cs">
+      <DependentUpon>201708141042517_test01.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -235,6 +228,7 @@
     <Compile Include="Models\Lookup.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Property.cs" />
+    <Compile Include="Models\PropertyFacilities.cs" />
     <Compile Include="Models\PropertyType.cs" />
     <Compile Include="Models\Rating.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -247,6 +241,7 @@
     </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Image\logo.png" />
     <Content Include="Content\Site.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -329,6 +324,11 @@
     <Content Include="Views\Properties\Details.cshtml" />
     <Content Include="Views\Properties\Edit.cshtml" />
     <Content Include="Views\Properties\Index.cshtml" />
+    <Content Include="Views\PropertyFacilities\Create.cshtml" />
+    <Content Include="Views\PropertyFacilities\Delete.cshtml" />
+    <Content Include="Views\PropertyFacilities\Details.cshtml" />
+    <Content Include="Views\PropertyFacilities\Edit.cshtml" />
+    <Content Include="Views\PropertyFacilities\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -339,22 +339,17 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201708140439020_addcountry.resx">
-      <DependentUpon>201708140439020_addcountry.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201708140635197_initmig.resx">
+      <DependentUpon>201708140635197_initmig.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201708140440313_addcity.resx">
-      <DependentUpon>201708140440313_addcity.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201708140829071_add-property-facility.resx">
+      <DependentUpon>201708140829071_add-property-facility.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201708140453405_addpropertytype.resx">
-      <DependentUpon>201708140453405_addpropertytype.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201708140455450_addratings.resx">
-      <DependentUpon>201708140455450_addratings.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201708140537102_addprop.resx">
-      <DependentUpon>201708140537102_addprop.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201708141042517_test01.resx">
+      <DependentUpon>201708141042517_test01.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
