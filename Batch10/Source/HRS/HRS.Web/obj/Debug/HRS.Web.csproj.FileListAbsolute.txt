@@ -261,3 +261,4 @@ E:\Github\proj-train-hrs\Batch10\Source\HRS\HRS.Web\obj\Debug\HRS.Web.csproj.Gen
 E:\Github\proj-train-hrs\Batch10\Source\HRS\HRS.Web\obj\Debug\HRS.Web.dll
 E:\Github\proj-train-hrs\Batch10\Source\HRS\HRS.Web\obj\Debug\HRS.Web.pdb
 E:\Github\proj-train-hrs\Batch10\Source\HRS\HRS.Web\obj\Debug\HRS.Web.Migrations.mig11292017.resources
+E:\Github\proj-train-hrs\Batch10\Source\HRS\HRS.Web\obj\Debug\HRS.Web.csprojResolveAssemblyReference.cache
