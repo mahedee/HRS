@@ -198,6 +198,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CitiesController.cs" />
     <Compile Include="Controllers\CountriesController.cs" />
+    <Compile Include="Controllers\FacilitiesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PropertiesController.cs" />
@@ -226,6 +227,18 @@
     <Compile Include="Migrations\201708140537102_addprop.Designer.cs">
       <DependentUpon>201708140537102_addprop.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201711291310331_first.cs" />
+    <Compile Include="Migrations\201711291310331_first.Designer.cs">
+      <DependentUpon>201711291310331_first.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711291317400_facility.cs" />
+    <Compile Include="Migrations\201711291317400_facility.Designer.cs">
+      <DependentUpon>201711291317400_facility.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711291345468_mig11292017.cs" />
+    <Compile Include="Migrations\201711291345468_mig11292017.Designer.cs">
+      <DependentUpon>201711291345468_mig11292017.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\City.cs" />
@@ -237,6 +250,7 @@
     <Compile Include="Models\Property.cs" />
     <Compile Include="Models\PropertyType.cs" />
     <Compile Include="Models\Rating.cs" />
+    <Compile Include="Models\Facility.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -329,6 +343,11 @@
     <Content Include="Views\Properties\Details.cshtml" />
     <Content Include="Views\Properties\Edit.cshtml" />
     <Content Include="Views\Properties\Index.cshtml" />
+    <Content Include="Views\Facilities\Create.cshtml" />
+    <Content Include="Views\Facilities\Delete.cshtml" />
+    <Content Include="Views\Facilities\Details.cshtml" />
+    <Content Include="Views\Facilities\Edit.cshtml" />
+    <Content Include="Views\Facilities\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -353,6 +372,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201708140537102_addprop.resx">
       <DependentUpon>201708140537102_addprop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711291310331_first.resx">
+      <DependentUpon>201711291310331_first.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711291317400_facility.resx">
+      <DependentUpon>201711291317400_facility.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711291345468_mig11292017.resx">
+      <DependentUpon>201711291345468_mig11292017.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

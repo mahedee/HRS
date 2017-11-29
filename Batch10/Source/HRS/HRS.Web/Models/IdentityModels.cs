@@ -58,5 +58,7 @@ namespace HRS.Web.Models
 
             base.OnModelCreating(modelBuilder);
         }
+
+        public DbSet<Facility> Facility { get; set; }
     }
 }
