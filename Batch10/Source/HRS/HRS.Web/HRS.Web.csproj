@@ -204,6 +204,7 @@
     <Compile Include="Controllers\PropertiesController.cs" />
     <Compile Include="Controllers\PropertyTypesController.cs" />
     <Compile Include="Controllers\RatingsController.cs" />
+    <Compile Include="Controllers\RoomTypesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -239,6 +240,10 @@
     <Compile Include="Migrations\201711291345468_mig11292017.Designer.cs">
       <DependentUpon>201711291345468_mig11292017.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201711291512222_roomtype.cs" />
+    <Compile Include="Migrations\201711291512222_roomtype.Designer.cs">
+      <DependentUpon>201711291512222_roomtype.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\City.cs" />
@@ -251,6 +256,7 @@
     <Compile Include="Models\PropertyType.cs" />
     <Compile Include="Models\Rating.cs" />
     <Compile Include="Models\Facility.cs" />
+    <Compile Include="Models\RoomType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -348,6 +354,11 @@
     <Content Include="Views\Facilities\Details.cshtml" />
     <Content Include="Views\Facilities\Edit.cshtml" />
     <Content Include="Views\Facilities\Index.cshtml" />
+    <Content Include="Views\RoomTypes\Create.cshtml" />
+    <Content Include="Views\RoomTypes\Delete.cshtml" />
+    <Content Include="Views\RoomTypes\Details.cshtml" />
+    <Content Include="Views\RoomTypes\Edit.cshtml" />
+    <Content Include="Views\RoomTypes\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -381,6 +392,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201711291345468_mig11292017.resx">
       <DependentUpon>201711291345468_mig11292017.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711291512222_roomtype.resx">
+      <DependentUpon>201711291512222_roomtype.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

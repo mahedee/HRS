@@ -60,5 +60,6 @@ namespace HRS.Web.Models
         }
 
         public DbSet<Facility> Facility { get; set; }
+        public DbSet<RoomType> RoomType { get; set; }
     }
 }
